@@ -1,3 +1,3 @@
 export default function ErrorMessage() {
-  return <p>Error</p>;
+  return <p>Request error</p>;
 }

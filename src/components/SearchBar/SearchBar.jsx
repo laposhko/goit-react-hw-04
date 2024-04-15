@@ -3,7 +3,13 @@ import toast from "react-hot-toast";
 
 export default function SearchBar({ onSubmit }) {
   function handleSubmit(event) {
-    const notify = () => toast("Search field must be filled");
+    const notify = () =>
+      toast("Search field must be filled", {
+        duration: 1500,
+        style: {
+          backgroundColor: "pink",
+        },
+      });
     event.preventDefault();
     const searchRequest = event.target.elements.search.value.trim();
     if (searchRequest !== "") {
