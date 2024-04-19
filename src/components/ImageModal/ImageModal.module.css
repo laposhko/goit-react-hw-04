@@ -1,0 +1,41 @@
+/* .modal {
+  display: flex;
+  flex-direction: column;
+}
+.icon {
+  width: 40px;
+} */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal {
+  border: none;
+  background-color: white;
+  position: absolute;
+  /* top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px; */
+  padding: 40px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  position: fixed;
+  right: 1%;
+  top: 1%;
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn:hover {
+  scale: 1.2;
+  border: none;
+}
+.img {
+  margin-top: 30px;
+}
