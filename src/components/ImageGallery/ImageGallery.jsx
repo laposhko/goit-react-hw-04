@@ -8,11 +8,14 @@ export default function ImageGallery({ items, openModal, changeImg }) {
           className={css.card}
           key={id}
           onClick={() => {
-            openModal();
             changeImg({ url: urls.regular, description: alt_description });
           }}
         >
-          <ImageCard url={urls.small} description={alt_description} />
+          <ImageCard
+            url={urls.small}
+            onClick={openModal}
+            description={alt_description}
+          />
         </li>
       ))}
     </ul>
